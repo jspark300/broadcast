@@ -42,9 +42,9 @@ public class MyService extends Service {
 
         // file download
 //
-//        Intent i = new Intent(this, MainActivity.class);
-//        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivity(i);
+        Intent i = new Intent(this, MainActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
 
         return super.onStartCommand(intent, flags, startId);
     }
